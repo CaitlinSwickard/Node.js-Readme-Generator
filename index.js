@@ -14,23 +14,72 @@
 // WHEN I click on the links in the Table of Contents
 // THEN I am taken to the corresponding section of the README
 
-
-
-
-
-
+//---------------------------------------------------------------------------------------- 
 
 
 // TODO: Include packages needed for this application
+const inquirer = require('inquirer');
+const fs = require('fs');
 
 // TODO: Create an array of questions for user input
-const questions = [];
+const questions = [
+  // Title of Project
+  {
+    type: 'input',
+    name: 'title',
+    message: 'What is the title of this project?',
+  },
+
+  // Description of project
+  {
+    type: 'input',
+    name: 'description',
+    message: 'What is a description of this project?'
+  },
+
+  // Installation instructions
+  {
+    type: 'input',
+    name: 'installation',
+    message: 'What are the installation instructions for this project?'
+  },
+
+  // Usage information
+  {
+    type: 'input',
+    name: 'usage',
+    message: 'How does the user run this app?'
+  },
+
+  // License options
+  {
+    type: '',
+    name: 'license',
+    message: 'Choose a licen'
+
+  },
+
+  // Contribution guidelines
+  {
+
+  },
+
+  // Github username
+  {
+
+  },
+
+  // Email address
+  {
+
+  },
+];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) { }
 
 // TODO: Create a function to initialize app
-function init() {}
+function init() { }
 
 // Function call to initialize app
 init();
