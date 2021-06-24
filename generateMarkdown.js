@@ -1,16 +1,48 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
+// ['MIT', 'APACHE 2.0', 'GPL 3.0', 'BSD 3', 'None'] from choices in index.js
 function renderLicenseBadge(license) {
   let badge = "";
-  // use switch statement???
+  switch (license) {
+    case 'MIT':
+      badge = '';
+      break;
+    case 'APACHE 2.0':
+      badge = '';
+      break;
+    case 'GPL 3.0':
+      badge = '';
+      break;
+    case 'BSD 3':
+      badge = '';
+      break;
+    case 'NONE':
+      break;
+  }
 }
+
 
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
   let link = "";
-  // use switch statement????
+  switch (license) {
+    case 'MIT':
+      link = '';
+      break;
+    case 'APACHE 2.0':
+      link = '';
+      break;
+    case 'GPL 3.0':
+      link = '';
+      break;
+    case 'BSD 3':
+      link = '';
+      break;
+    case 'NONE':
+      break;
+  }
 
 }
 
@@ -28,7 +60,6 @@ function generateMarkdown(data) {
   ## Description
   ${data.description}
  
-
   ## Table of Contents
   * [Installation](#installation)
   * [Usage](#usage)
@@ -47,7 +78,6 @@ function generateMarkdown(data) {
   This project is covered under the following license:
   * ${data.license}
   View license at:
-node
 
   ## Tests
   ${data.tests}
