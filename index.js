@@ -30,21 +30,21 @@ const questions = [
   {
     type: 'input',
     name: 'title',
-    message: 'What is the title of this project?',
+    message: 'What is the title of the project?',
   },
 
   // Description of project
   {
     type: 'input',
     name: 'description',
-    message: 'Write a description of this project.'
+    message: 'What is this project about? Give a detailed description of the project.'
   },
 
   // Installation instructions
   {
     type: 'input',
     name: 'installation',
-    message: 'What are the installation instructions for this project?'
+    message: 'What does the user need to install to run this app?'
   },
 
   // Usage information
@@ -66,7 +66,7 @@ const questions = [
   {
     type: 'input',
     name: 'contribution',
-    message: 'What are your contribution guidelines for users?'
+    message: 'Who contributed to this project?'
   },
 
   // Tests

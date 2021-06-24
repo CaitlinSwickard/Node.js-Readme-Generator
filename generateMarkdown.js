@@ -5,20 +5,21 @@ function renderLicenseBadge(license) {
   let badge = "";
   switch (license) {
     case 'MIT':
-      badge = '';
+      badge = '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)';
       break;
     case 'APACHE 2.0':
-      badge = '';
+      badge = '[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)';
       break;
     case 'GPL 3.0':
-      badge = '';
+      badge = '[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)';
       break;
     case 'BSD 3':
-      badge = '';
+      badge = '[![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)';
       break;
     case 'NONE':
       break;
   }
+  return badge;
 }
 
 
@@ -29,38 +30,37 @@ function renderLicenseLink(license) {
   let link = "";
   switch (license) {
     case 'MIT':
-      link = '';
+      link = 'https://opensource.org/licenses/MIT';
       break;
     case 'APACHE 2.0':
-      link = '';
+      link = 'https://opensource.org/licenses/Apache-2.0';
       break;
     case 'GPL 3.0':
-      link = '';
+      link = 'https://opensource.org/licenses/lgpl-3.0.html';
       break;
     case 'BSD 3':
-      link = '';
+      link = 'https://opensource.org/licenses/BSD-3-Clause';
       break;
     case 'NONE':
       break;
   }
-
+  return link;
 }
 
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
-function renderLicenseSection(license) {
-  let section = "";
-}
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
+  let badge = renderLicenseBadge(data.license);
+  let link = renderLicenseLink(data.license);
 
-  return `# ${data.title}
+  return `# ${data.title} ${badge}
+
 
   ## Description
   ${data.description}
+  For a preview on using the app click [here.]()
  
-  ## Table of Contents
+  ### Table of Contents
   * [Installation](#installation)
   * [Usage](#usage)
   * [License](#license)
@@ -78,6 +78,7 @@ function generateMarkdown(data) {
   This project is covered under the following license:
   * ${data.license}
   View license at:
+  * ${link}
 
   ## Tests
   ${data.tests}
