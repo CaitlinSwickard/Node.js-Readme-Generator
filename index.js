@@ -92,19 +92,22 @@ const questions = [
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) { 
+function writeToFile(fileName, data) {
   return fs.writeFileSync(fileName, data)
 };
 
 
 
 // TODO: Create a function to initialize app
+// use the spread operator in the writeToFile();
 function init() {
-  inquire.prompt(questions)
-  .then(answer => {
-    writeToFile('Readme.md', generateMarkdown({...answer}))
-  })
- };
+  inquirer.prompt(questions)
+    .then(response => {
+      console.log(response);
+      writeToFile('Readme.md', generateMarkdown({ ...response }))
+    })
+};
 
 // Function call to initialize app
 init();
+ 
