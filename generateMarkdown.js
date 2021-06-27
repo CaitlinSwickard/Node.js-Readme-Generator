@@ -1,4 +1,4 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
+// function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 // ['MIT', 'APACHE 2.0', 'GPL 3.0', 'BSD 3', 'None'] from choices in index.js
 function renderLicenseBadge(license) {
@@ -24,7 +24,7 @@ function renderLicenseBadge(license) {
 
 
 
-// TODO: Create a function that returns the license link
+// function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
   let link = "";
@@ -48,7 +48,7 @@ function renderLicenseLink(license) {
 }
 
 
-// TODO: Create a function to generate markdown for README
+// function to generate markdown for README
 function generateMarkdown(data) {
   let badge = renderLicenseBadge(data.license);
   let link = renderLicenseLink(data.license);
@@ -58,7 +58,7 @@ function generateMarkdown(data) {
 
   ## Description
   ${data.description}
-  For a preview on using the app click [here.]()
+  * For a preview on using the app click [here.]()
  
   ### Table of Contents
   * [Installation](#installation)
@@ -76,7 +76,7 @@ function generateMarkdown(data) {
 
   ## License
   This project is covered under the following license:
-  * ${data.license}
+  * ${data.license} ${badge}
   View license at:
   * ${link}
 

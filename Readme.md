@@ -1,9 +1,9 @@
-# sdfsdf [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+# Node Readme Generator [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 
   ## Description
-  sdfsdf
-  For a preview on using the app click [here.]()
+  This project generates a readme file template through prompts. Once the user has answered all the prompts it will generate a readme.md file. That readme.md file will be filled in with the users responses to the prompts. Once the file is generated they can then use the completed readme file for their own repo on any project of their choice. Each project they complete they can fill in a new readme template. 
+  * For a preview on using the app click [here.]()
  
   ### Table of Contents
   * [Installation](#installation)
@@ -14,24 +14,24 @@
   * [Questions](#questions)
   
   ## Installation
-  dsfdf
+  This app requires Inquirer. Please run the following code in your command line: npm I
 
   ## Usage
-  dsfdf
+  Once all the packages have been installed, open terminal and run the following code in command line : node index.js. Each time you run the prompted questions your read.me file will be over written with your new responses.
 
   ## License
   This project is covered under the following license:
-  * APACHE 2.0
+  * MIT
   View license at:
-  * https://opensource.org/licenses/Apache-2.0
+  * https://opensource.org/licenses/MIT
 
   ## Tests
-  dfdsf
+  No tests.
 
   ## Contribution
-  sdfsdf
+  Caitlin Swickard
   
   ## Questions?
   Reach me here with additional questions:
-  [Github Profile](https://www.github.com/dsfdsf)
-  dff
+  [Github Profile](https://www.github.com/CaitlinSwickard)
+  caitlin6029@gmail.com
