@@ -4,6 +4,7 @@ This project is a command-line application that dynamically generates a professi
 
   * [Installation](#install)
   * [Usage](#usage)
+  * For a video on using the app click [here.]()
 
 
 
@@ -40,5 +41,5 @@ Once all the packages have been installed, open terminal and run the following c
 
 ## Screen shots
 
-![Shot-1](images/Shot1.png)
-![Shot-2](images/Shot2.png)
+![Shot-1](images/shot-1.png)
+![Shot-2](images/shot-2.png)
