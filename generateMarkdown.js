@@ -58,7 +58,7 @@ function generateMarkdown(data) {
 
   ## Description
   ${data.description}
-  * For a preview on using the app click [here.]()
+  * For a preview video on using the app click [here.](https://drive.google.com/file/d/1rhCB5oYgqqUg-WVetsNjl7jOPZihIULE/view?usp=sharing)
  
   ### Table of Contents
   * [Installation](#installation)
@@ -76,8 +76,8 @@ function generateMarkdown(data) {
 
   ## License
   This project is covered under the following license:
-  * ${data.license} ${badge}
-  View license at:
+  * ${badge}
+  View license info at:
   * ${link}
 
   ## Tests
@@ -88,8 +88,8 @@ function generateMarkdown(data) {
   
   ## Questions?
   Reach me here with additional questions:
-  [Github Profile](https://www.github.com/${data.github})
-  ${data.email}
+  - [My Github Profile](https://www.github.com/${data.github})
+  - Email: ${data.email}
 `;
 }
 

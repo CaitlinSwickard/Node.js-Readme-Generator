@@ -4,7 +4,7 @@ This project is a command-line application that dynamically generates a professi
 
   * [Installation](#install)
   * [Usage](#usage)
-  * For a video on using the app click [here.]()
+  * For a video on using the app click [here.](https://drive.google.com/file/d/1rhCB5oYgqqUg-WVetsNjl7jOPZihIULE/view?usp=sharing)
 
 
 
