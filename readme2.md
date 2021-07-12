@@ -28,7 +28,10 @@ This project is a command-line application that dynamically generates a professi
 
 ## Install
 
-Run npm i in terminal to install all the needed packages to run this app.
+To install run the following code in your terminal: 
+```
+npm i
+```
 
 ## Usage
 
